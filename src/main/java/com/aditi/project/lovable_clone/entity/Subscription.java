@@ -1,5 +1,6 @@
 package com.aditi.project.lovable_clone.entity;
 
+import com.aditi.project.lovable_clone.enums.SubscriptionStatus;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,8 @@ public class Subscription {
     Long id;
     User user;
     Plan plan;
+
+    SubscriptionStatus status; // can only have values from the enum
 
     String stripeCustomerId;
     String stripeSubscription;
